@@ -2,5 +2,4 @@ site_name: Калькулятор
 theme:
   name: material
 nav:
-  - Главная: index.md
-  - Код калькулятора: calculator_code.md
+  - Главная: calculator_code.md
