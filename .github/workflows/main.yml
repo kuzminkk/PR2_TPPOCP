@@ -28,3 +28,4 @@ jobs:
       run: |
         export PYTHONPATH=$PYTHONPATH:.
         pytest -q
+
