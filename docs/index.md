@@ -16,3 +16,4 @@ from calculator import add, power
 
 assert add(2, 2) == 4
 assert power(2, 3) == 8
+
