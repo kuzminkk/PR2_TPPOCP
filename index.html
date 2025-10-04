@@ -199,19 +199,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -223,34 +210,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Примеры использования
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -276,23 +235,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Примеры использования
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -307,20 +249,22 @@
 
 
 
-<h1 id="_1">Калькулятор</h1>
-<p>Простой калькулятор с функциями:</p>
-<ul>
-<li>Сложения</li>
-<li>Вычитания</li>
-<li>Умножения</li>
-<li>Деления</li>
-<li>Возведения в степень</li>
-</ul>
-<h2 id="_2">Примеры использования</h2>
+<h1 id="_1">Исходный код калькулятора</h1>
+<p>Файл: <code>calculator.py</code></p>
+<p>Ниже представлен исходный код калькулятора, реализующего основные математические операции:</p>
 <p>```python
-from calculator import add, power</p>
-<p>assert add(2, 2) == 4
-assert power(2, 3) == 8</p>
+def add(a, b):
+    return a + b</p>
+<p>def sub(a, b):
+    return a - b</p>
+<p>def mul(a, b):
+    return a * b</p>
+<p>def power(a, b):
+    return a ** b</p>
+<p>def div(a, b):
+    if b == 0:
+        raise ValueError("Деление на ноль")
+    return a / b</p>
 
 
 
