@@ -17,3 +17,6 @@ def test_div_zero():
     import pytest
     with pytest.raises(ValueError):
         div(1, 0)
+
+def test_power():
+    assert power(2, 3) == 8
