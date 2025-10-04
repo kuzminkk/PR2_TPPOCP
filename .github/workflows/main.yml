@@ -30,9 +30,22 @@ jobs:
           export PYTHONPATH=$PYTHONPATH:.
           pytest -q
 
+      - name: Update calculator_code.md
+        run: |
+          mkdir -p docs
+          echo "# Исходный код калькулятора" > docs/calculator_code.md
+          echo "" >> docs/calculator_code.md
+          echo "Файл: \`calculator.py\`" >> docs/calculator_code.md
+          echo "" >> docs/calculator_code.md
+          echo '```python' >> docs/calculator_code.md
+          cat calculator.py >> docs/calculator_code.md
+          echo '```' >> docs/calculator_code.md
+          echo "" >> docs/calculator_code.md
+          echo "_Документация обновлена автоматически при последнем коммите._" >> docs/calculator_code.md
+  
       - name: Build documentation
         run: python -m mkdocs build
-
+  
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
