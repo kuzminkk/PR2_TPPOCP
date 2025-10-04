@@ -2,4 +2,6 @@ site_name: Калькулятор
 theme:
   name: material
 nav:
-  - Home: index.md
+  - Главная: index.md
+  - Код калькулятора: calculator_code.md
+  - Тесты: tests.md
