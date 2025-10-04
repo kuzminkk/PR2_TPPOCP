@@ -31,7 +31,7 @@ jobs:
           pytest -q
 
       - name: Build documentation
-        run: python -m docs build
+        run: python -m mkdocs build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
