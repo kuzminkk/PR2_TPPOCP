@@ -13,10 +13,10 @@ def test_mul():
 def test_div():
     assert div(10, 2) == 5
 
+def test_power():
+    assert power(2, 3) == 8
+
 def test_div_zero():
     import pytest
     with pytest.raises(ValueError):
         div(1, 0)
-
-def test_power():
-    assert power(2, 3) == 8
