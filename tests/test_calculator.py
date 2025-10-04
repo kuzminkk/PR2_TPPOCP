@@ -1,4 +1,4 @@
-from calculator import add, sub, mul, div
+from calculator import add, sub, mul, div, power
 import pytest
 
 def test_add():
