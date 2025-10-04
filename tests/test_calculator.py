@@ -14,7 +14,7 @@ def test_div():
     assert div(10, 2) == 5
 
 def test_power():
-    assert power(2, 3) == 8
+    assert power(3, 3) == 27
 
 def test_div_zero():
     import pytest
