@@ -1,19 +1,23 @@
+# Исходный код калькулятора
 
-# Калькулятор
+Файл: `calculator.py`
 
-Простой калькулятор с функциями:
-
-- Сложения
-- Вычитания
-- Умножения
-- Деления
-- Возведения в степень
-
-## Примеры использования
+Ниже представлен исходный код калькулятора, реализующего основные математические операции:
 
 ```python
-from calculator import add, power
+def add(a, b):
+    return a + b
 
-assert add(2, 2) == 4
-assert power(2, 3) == 8
+def sub(a, b):
+    return a - b
 
+def mul(a, b):
+    return a * b
+
+def power(a, b):
+    return a ** b
+
+def div(a, b):
+    if b == 0:
+        raise ValueError("Деление на ноль")
+    return a / b
