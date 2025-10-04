@@ -1,4 +1,4 @@
-from calculator import add, sub, mul, div
+from calculator import add, sub, mul, div, power
 import pytest
 
 def test_add():
@@ -12,6 +12,9 @@ def test_mul():
 
 def test_div():
     assert div(10, 2) == 5
+
+def test_power():
+    assert power(2, 3) == 8
 
 def test_div_zero():
     import pytest
